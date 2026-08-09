@@ -153,13 +153,13 @@
     <span>US Letter + A4, 300 DPI</span>
     <a href="/privacy.html">Privacy & Cookies</a></div>
 </div><div class="wrap copyright">© CozyJournalBoutique. All illustrations are digital downloads; no physical item is shipped.</div></footer>
-<div id="cookiebar" class="cookiebar" hidden>
+<div id="cookiebar" class="cookiebar" style="display:none">
   <p>This site uses only essential storage to remember your choice — no tracking or advertising cookies. We load fonts from Google and product images from Etsy. <a href="/privacy.html">Learn more</a></p>
-  <button onclick="cjbCookieOk()">Got it</button>
+  <button type="button" onclick="cjbCookieOk()">Got it</button>
 </div>
 <script>
-(function(){try{if(!localStorage.getItem('cjb_cookie')){var b=document.getElementById('cookiebar');if(b)b.hidden=false;}}catch(e){}})();
-function cjbCookieOk(){try{localStorage.setItem('cjb_cookie','1');}catch(e){}var b=document.getElementById('cookiebar');if(b)b.hidden=true;}
+(function(){try{if(!localStorage.getItem('cjb_cookie')){var b=document.getElementById('cookiebar');if(b)b.style.display='flex';}}catch(e){}})();
+function cjbCookieOk(){try{localStorage.setItem('cjb_cookie','1');}catch(e){}var b=document.getElementById('cookiebar');if(b)b.style.display='none';}
 </script>
 <script>document.querySelectorAll('.mainnav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('nav-open')));</script>
 </body></html>
